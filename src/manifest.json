@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "LinkedIn Show More Results Auto-clicker",
+    "version": "1.8",
+    "description": "Automatically scrolls and clicks the 'Show more results' button on LinkedIn company invites",
+    "author": "DereC4",
+    "permissions": [
+      "activeTab"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://www.linkedin.com/company/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "icons": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  }
