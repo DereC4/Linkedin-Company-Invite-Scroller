@@ -5,13 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc && cp src/manifest.json dist/"
+    "build": "tsc && npx ncp src/manifest.json dist/"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/chrome": "^0.0.313",
+    "ncp": "^2.0.0",
     "typescript": "^5.8.2"
   }
 }
